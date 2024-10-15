@@ -1,0 +1,34 @@
+<html>
+{% load static %}
+<head>
+    <link rel="stylesheet" href="{% static 'results_styles.css' %}">
+    <title>Results for your job Application</title>
+    {% comment %} <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet"> {% endcomment %}
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap')
+    </style>
+    {% for i in data %}
+    <div class="center-container">
+        <div class="jobs-container">
+            <div class="jobs">
+                <div class="job_name"><h1>{{i.job_title}}</h1></div>
+                <div class="company_name"><h3>{{i.company_name}}</h3></div>
+                <div class="details">
+                    {% comment %} <div class="job_type"><p>{{i.job_type}}</p></div>
+                    <div class="work_preference"><p>{{i.work_preference}}</p></div> {% endcomment %}
+                    <div class="location"><p>{{i.location}}</p></div>
+                    <div class="salary"><p>{{i.salary_info}}</p></div>
+                </div>
+                {% comment %} <div class="blank1"><p>kjn    </p></div> {% endcomment %}
+                <div class="apply_link"><a href="{{i.Link}}" class="apply_button">Apply</a></div>
+                {% comment %} <div class="blank2"><p>  kjnhhhhhhhhhhhhhhhhhhhhhh jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj kkkkkkkk k k k k k k k k k k</p></div> {% endcomment %}
+            </div>
+        </div>
+    </div>
+{% endfor %}
+</body>
+</html>

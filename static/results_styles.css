@@ -1,0 +1,292 @@
+/* body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.jobs {
+    background-color: #333;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.jobs .job_name p {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.jobs .job_type p,
+.jobs .work_preference p {
+    font-size: 14px;
+    margin: 0px 0;
+}
+
+.jobs .company_name p,
+.jobs .comp_desc p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.jobs .apply_link a {
+    background-color: #03e0d9;
+    border-radius: 5px;
+    color: #000;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.jobs .apply_link a:hover {
+    background-color: #fff;
+    color: #000;
+} */
+
+
+/* body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.jobs {
+    background-color: #333;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    width: 450px;
+    flex-wrap: wrap;
+}
+
+.job_name p {
+    font-size: 24px;
+    font-weight: bold;
+    flex: 100%;
+}
+
+.job_info {
+    flex: 1;
+}
+
+.job_info p {
+    display: inline;
+    font-size: 16px;
+}
+
+.dot::after {
+    content: "\00B7";
+    margin: 0 5px;
+}
+
+.company_name p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.comp_desc p {
+    margin-top: 10px;
+}
+
+.apply_link {
+    margin-left: auto;
+    margin-top: 10px;
+}
+
+.apply_button {
+    background-color: #03e0d9;
+    border-radius: 5px;
+    color: #000;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.apply_button:hover {
+    background-color: #fff;
+    color: #000;
+} */
+
+/* .center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+} 
+
+.jobs-container {
+    text-align: center;
+} */ 
+
+
+
+
+
+/* 
+.jobs-container { 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 0 0 10px 0;
+}
+
+.jobs {
+    border: 1px solid #ccc;
+    height: 240px;
+    width: calc(35% - 20px); 
+    margin-bottom: 20px; /
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    border-radius: 20px;
+    padding: 0 20px 20px 20px;
+    
+    
+}
+
+
+
+
+
+.job_name {
+    float: left;
+}
+
+.company_name {
+    clear: both;
+    margin-top: 5px;
+    padding: 0 0 0 0;
+}
+
+.details {
+    margin-top: 10px;
+}
+
+.details > div {
+    float: left;
+    width: calc(25% - 5px);
+    margin-right: 5px;
+}
+
+.apply_link {
+    position: absolute;
+    bottom: 10;
+    right: 10;
+    margin: 10px;
+}
+
+.apply_button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.apply_button:hover {
+    background-color: #0056b3;
+} */ 
+
+body{
+    background-image: url('3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+
+
+.josefin-sans-jobs {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.jobs-container { 
+    display: flex;
+    justify-content: center; /*Align boxes to the center horizontally */
+    align-items: center;
+    gap: 20px; /*Add space between boxes */
+    flex-wrap: wrap; /*Allow boxes to wrap onto the next line */
+    margin: 0 0 10px 0;
+}
+
+.jobs {
+    border: 1px solid #242424; /* Adjust border color */
+    height: 240px;
+    width: calc(35% - 20px); /* Adjust width to fit two boxes side by side with gap */
+    margin-bottom: 20px; /* Add space between rows of boxes */
+    box-sizing: border-box; /* Include padding and border in box dimensions */
+    position: relative;
+    overflow: hidden; /* Clear floated elements */
+    display: inline-block;
+    border-radius: 20px;
+    padding: 0 20px 20px 20px;
+    background-color: #222222a2; /* Set background color to black */
+    color: #fff; /* Set text color to white */
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.job_name {
+    float: left;
+}
+
+.company_name {
+    clear: both;
+    margin-top: 5px;
+    padding: 0 0 0 0;
+}
+
+/* .details {
+    margin-top: 10px;
+}
+
+.details > div {
+    float: left;
+    width: calc(25% - 5px); /* Adjust according to your preference 
+    margin-right: 5px;
+    overflow: hidden; 
+} */
+
+.details {
+    margin-top: auto; /* Push details to the bottom */
+    display: flex; /* Use flexbox for details */
+    flex-wrap: wrap; /* Allow details to wrap */
+}
+
+.details > div {
+    flex: 2 2 40%; /* Take up equal space, and allow wrapping */
+    margin-right: 5px;
+}
+
+.apply_link {
+    position: absolute;
+    bottom: 10;
+    right: 10;
+    margin: 10px;
+}
+
+.apply_button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Change button background color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.apply_button:hover {
+    background-color: #0056b3;
+}
