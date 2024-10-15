@@ -89,7 +89,7 @@ Llama Hunt is a web application designed to streamline the job search process by
 
 ## Intel OneAPI vs AWS Inference Speed Comparison
 
-![image](https://github.com/nsudhanthiran/LlamaHunt/assets/118297543/116bb402-e630-4f21-bbcc-9f01f57f363a)
+![image](https://github.com/nsudhanthiran/LlamaHunt/assets/118297543/116bb402-e630-4f21-bbcc-9f01f57f363a.png)
 
 
 
@@ -103,7 +103,7 @@ import intel_extension_for_pytorch as ipex
 optimized_tag_generator = ipex.optimize(tag_generator, dtype=torch.bfloat16)
 ```
 
-![intel_acceleration_comparison](https://github.com/nsudhanthiran/LlamaHunt/assets/118297543/87d62f5a-8945-4782-b2b2-ecdbe752900c)
+![intel_acceleration_comparison](https://github.com/nsudhanthiran/LlamaHunt/assets/118297543/87d62f5a-8945-4782-b2b2-ecdbe752900c.png)
 
 
 And as it can be observed, both the models performed observably better with Intel's acceleration library.
